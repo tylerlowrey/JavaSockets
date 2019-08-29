@@ -1,3 +1,11 @@
+/**
+ * ConnectionHandler.java
+ * @author Tyler Lowrey
+ * Date Created: 08/27/19
+ * Description: This class represents an instance of a connection to a client. It has its own clientSocket that is used
+ * to send messages to the client.
+ */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
