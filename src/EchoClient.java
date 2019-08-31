@@ -41,6 +41,7 @@ public class EchoClient
         catch (IOException e)
         {
             System.err.println("Couldn't get I/O for the connection to " + serverAddr);
+            System.out.println(e.getMessage());
             System.exit(1);
         }
     }

@@ -29,8 +29,8 @@ public class ConnectionHandler implements Runnable
 
         try
         (
-                PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
-                BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
+            BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         )
         {
             while ((inputLine = in.readLine()) != null)
@@ -41,6 +41,7 @@ public class ConnectionHandler implements Runnable
         catch (IOException e)
         {
             System.out.println("IOException occurred during connection with " + clientSocket.getInetAddress());
+            System.out.println(e.getMessage());
         }
 
     }
